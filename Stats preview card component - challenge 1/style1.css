@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+*{
+  padding:0;
+  margin:0; 
+  box-sizing:box-border;
+}
+html{
+  font-size:1vw;
+}
+body{
+  box-sizing:border-box;
+  width:100vw;
+  height:100vh;
+  background-color:hsl(233, 47%, 7%);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:hsl(0, 0%, 100%);
+  font-family: 'Inter', sans-serif;
+}
+.card{
+  height:29.8666rem;
+  width:74.1333rem;
+  background-color:hsl(244, 38%, 16%);
+  display:flex;
+  border-radius:7px;
+}
+.card section{
+  width:50%;
+}
+.img{
+  background:hsl(277, 64%, 61%) url(https://i.ibb.co/ccTNGwj/image-header-desktop.jpg) no-repeat;
+  background-blend-mode: multiply;
+  background-size:cover;
+  border-bottom-right-radius:7px;
+  border-top-right-radius:7px;
+}
+.text{
+  padding-top:4em;
+  padding-left:4em;
+  padding-right:0;
+}
+span{
+  color:hsl(277, 64%, 61%);
+}
+.main-content{
+  width:26.666rem;
+}
+h1{
+  font-weight:700;
+  font-size:2.5rem;
+}
+
+p{
+  font-family: 'Lexend Deca', sans-serif;
+  color:hsla(0, 0%, 100%, 0.75);
+  font-weight:400;
+  margin-top:2.4rem;
+  line-height:1.666rem;
+}
+.main-content section{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  margin-top:4.8rem;
+}
+.main-content section div{
+  display:flex;
+  flex-direction:column;
+  font-weight:700;
+  font-size:1.466rem;
+}
+a{
+  color:hsla(0, 0%, 100%, 0.6);
+  font-size:.9rem;
+  font-weight:400;
+  letter-spacing:.06rem;
+  margin-top:.4rem;
+}
+
+@media only screen and (max-width: 700px) {
+  html{
+    font-size:10px;
+  }
+  body{
+    height:85rem;
+  }
+  h1{
+  font-size:2.9rem;
+   margin-top:3.5rem;
+  }
+  .card{
+     height:78.5rem;
+     width:33.3rem; 
+     flex-direction:column;
+    font-size:15px;
+  }
+  .text{
+    padding:0rem;
+    text-align:center;
+  }
+  
+  .img{
+  background:hsl(277, 64%, 61%) url(https://i.ibb.co/6Wbb6s7/image-header-mobile.jpg) no-repeat cover;
+    height:31%;
+    order:-1;
+    border-top-left-radius:7px;
+    border-top-right-radius:7px;
+    border-bottom-right-radius:0px;
+  }
+  .card section{
+   width:100%;
+  }
+  .main-content{
+    margin:auto;
+    width:27rem;
+  }
+  .main-content p{
+        line-height:2rem;
+  }
+  .main-content section{
+    flex-direction:column;
+    height:210px;
+  }
+  .main-content section div{
+    font-size:2rem;
+  }
+  a{
+    font-size:1.35rem;
+  }
+}
